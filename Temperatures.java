@@ -56,7 +56,6 @@ public class Temperatures {
         temps[3][4] = 70;
         temps[3][5] = 74;
         temps[3][6] = 72;
-        out.println(temps);
         int[] sunday = {temps[0][0], temps[1][0], temps[2][0], temps[3][0]};
         int[] monday = {temps[0][1], temps[1][1], temps[2][1], temps[3][1]};
         int[] tuesday = {temps[0][2], temps[1][2], temps[2][2], temps[3][2]};
