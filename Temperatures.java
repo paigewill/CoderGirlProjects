@@ -22,7 +22,10 @@ public class Temperatures {
     public static void print(int[] temps) {
         for (int i = 0; i < temps.length; i++)
         {
-            System.out.print(temps[i] + ", ");
+            out.print(temps[i]);
+            if (i != 6) {
+                out.print(", ");
+            }
         }
     }
 
