@@ -30,12 +30,10 @@ public class Post {
         this.postOrderNumber = nextOrderNumber;
         nextOrderNumber++;
         this.postContent = postContent;
-        if (hasWebLink == true) {
-            this.hasWebLink = true;
+        this.hasWebLink = hasWebLink;
+        if (this.hasWebLink == true) {
             out.println("What is the web address you would like to link to this post?");
             this.webLink = keyboard.nextLine();
-        } else {
-            this.hasWebLink = false;
         }
     }
 
