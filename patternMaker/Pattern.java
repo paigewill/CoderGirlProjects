@@ -1,6 +1,8 @@
 package patternMaker;
 
-public abstract class Pattern {
+public class Pattern {
     protected boolean needleJam = false;
-    public abstract void stitchCombo();
+    protected double jamRate;
+    public void stitchCombo() {
+    }
 }

@@ -4,11 +4,11 @@ public class CrossStitchWigglePattern extends Pattern {
     //xXxXxXxXxX
 
     public CrossStitchWigglePattern() {
-        this.needleJam = (Math.random() < 0.05d);
     }
 
     @Override
     public void stitchCombo() {
+        this.needleJam = (Math.random() < 0.05d);
         SmallCrossStitch smallX = new SmallCrossStitch();
         LargeCrossStitch largeX = new LargeCrossStitch();
         if (this.needleJam) {

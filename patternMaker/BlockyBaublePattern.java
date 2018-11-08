@@ -5,11 +5,11 @@ public class BlockyBaublePattern extends Pattern {
     //[]--o--[]--o--[]--o--
 
     public BlockyBaublePattern() {
-        this.needleJam = (Math.random() < 0.10d);
     }
 
     @Override
     public void stitchCombo() {
+        this.needleJam = (Math.random() < 0.10d);
         BlockStitch block = new BlockStitch();
         ShortLineStitch shortLine = new ShortLineStitch();
         CircleStitch circle = new CircleStitch();
