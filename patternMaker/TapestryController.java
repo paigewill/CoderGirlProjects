@@ -1,4 +1,4 @@
-package PatternMaker;
+package patternMaker;
 import java.util.Scanner;
 
 public class TapestryController {

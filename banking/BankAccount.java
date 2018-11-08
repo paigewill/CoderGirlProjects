@@ -1,4 +1,4 @@
-package Banking;
+package banking;
 
 public class BankAccount {
     protected double balance;

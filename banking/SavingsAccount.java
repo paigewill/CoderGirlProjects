@@ -1,4 +1,4 @@
-package Banking;
+package banking;
 
 public class SavingsAccount extends BankAccount {
     private double interestRate;

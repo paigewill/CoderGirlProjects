@@ -1,4 +1,4 @@
-package PatternMaker;
+package patternMaker;
 
 
 public class BlockyBaublePattern extends Pattern {

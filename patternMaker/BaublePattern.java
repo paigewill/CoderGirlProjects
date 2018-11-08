@@ -1,4 +1,4 @@
-package PatternMaker;
+package patternMaker;
 
 public class BaublePattern extends Pattern {
     //--o--o--o--o--o

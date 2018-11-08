@@ -1,4 +1,4 @@
-package Banking;
+package banking;
 
 public class CheckingAccount extends BankAccount {
     private double overdraftLimit = 200;

@@ -1,4 +1,4 @@
-package MicroBlog;
+package microBlog;
 
 import static java.lang.System.out;
 
@@ -32,7 +32,7 @@ public class Menu {
         mainMenu[2] = "Write a post as current user";
         mainMenu[3] = "Print all posts";
         mainMenu[4] = "Print all users";
-        out.println("MicroBlog - Main Menu");
+        out.println("microBlog - Main Menu");
         for (int i = 0; i < mainMenu.length; i++) {
             out.println((i + 1) + ". " + mainMenu[i]);
         }
@@ -84,7 +84,7 @@ public class Menu {
 
     public void createNewUser() {
         Scanner keyboard = new Scanner(System.in);
-        out.println("Welcome to MicroBlog! You have selected 'Create new user'. Please enter your first name:");
+        out.println("Welcome to microBlog! You have selected 'Create new user'. Please enter your first name:");
         String firstName = keyboard.nextLine();
         out.println("Hi " + firstName + "! What is your last name?");
         String lastName = keyboard.nextLine();

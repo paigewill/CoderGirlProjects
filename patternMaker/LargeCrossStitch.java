@@ -1,4 +1,4 @@
-package PatternMaker;
+package patternMaker;
 
 public class LargeCrossStitch extends Stitch {
     public void sew() {

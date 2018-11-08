@@ -1,4 +1,4 @@
-package PatternMaker;
+package patternMaker;
 
 public class BrokenWigglePattern extends Pattern {
     //xXxXxXxXxX
