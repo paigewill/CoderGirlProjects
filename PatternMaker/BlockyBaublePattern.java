@@ -3,7 +3,11 @@ package PatternMaker;
 
 public class BlockyBaublePattern extends Pattern {
     //[]--o--[]--o--[]--o--
-    boolean needleJam = (Math.random() < 0.10d);
+
+    public BlockyBaublePattern() {
+        this.needleJam = (Math.random() < 0.10d);
+    }
+
     @Override
     public void stitchCombo() {
         BlockStitch block = new BlockStitch();

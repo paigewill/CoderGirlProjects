@@ -2,12 +2,16 @@ package PatternMaker;
 
 public class CrossStitchWigglePattern extends Pattern {
     //xXxXxXxXxX
-    boolean needleJam = (Math.random() < 0.05d);
+
+    public CrossStitchWigglePattern() {
+        this.needleJam = (Math.random() < 0.05d);
+    }
+
     @Override
     public void stitchCombo() {
         SmallCrossStitch smallX = new SmallCrossStitch();
         LargeCrossStitch largeX = new LargeCrossStitch();
-        if (needleJam) {
+        if (this.needleJam) {
             for (int i = 0; i < 2; i++) {
                 smallX.sew();
                 largeX.sew();

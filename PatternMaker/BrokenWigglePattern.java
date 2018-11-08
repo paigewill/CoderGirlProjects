@@ -3,12 +3,15 @@ package PatternMaker;
 public class BrokenWigglePattern extends Pattern {
     //xXxXxXxXxX
 
-    boolean needleJam = (Math.random() < 0.40d);
+    public BrokenWigglePattern() {
+        this.needleJam = (Math.random() < 0.40d);
+    }
+
     @Override
     public void stitchCombo() {
         SmallCrossStitch smallX = new SmallCrossStitch();
         LargeCrossStitch largeX = new LargeCrossStitch();
-        if (needleJam) {
+        if (this.needleJam) {
             for (int i = 0; i < 2; i++) {
                 smallX.sew();
                 largeX.sew();

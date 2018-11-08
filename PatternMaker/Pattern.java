@@ -1,6 +1,6 @@
 package PatternMaker;
 
 public abstract class Pattern {
-    protected static boolean needleJam;
+    protected boolean needleJam = false;
     public abstract void stitchCombo();
 }
