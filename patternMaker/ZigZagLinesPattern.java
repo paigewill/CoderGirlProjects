@@ -4,14 +4,12 @@ public class ZigZagLinesPattern extends Pattern {
 //ZZZ===ZZZ===
     @Override
     public void stitchCombo() {
-        FillStitch fill = new FillStitch();
-        ZigZagStitch zigZag = new ZigZagStitch();
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {
-                zigZag.sew();
+                this.stitches[6].sew();
             }
             for (int k = 0; k < 3; k++) {
-                fill.sew();
+                this.stitches[4].sew();
             }
         }
     }

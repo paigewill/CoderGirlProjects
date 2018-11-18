@@ -6,18 +6,16 @@ public class BrokenWigglePattern extends Pattern {
     @Override
     public void stitchCombo() {
         this.needleJam = (Math.random() < 0.40d);
-        SmallCrossStitch smallX = new SmallCrossStitch();
-        LargeCrossStitch largeX = new LargeCrossStitch();
         if (this.needleJam) {
             for (int i = 0; i < 2; i++) {
-                smallX.sew();
-                largeX.sew();
+                this.stitches[1].sew();
+                this.stitches[2].sew();
             }
-            smallX.sew();
+            this.stitches[1].sew();
         } else {
             for (int i = 0; i < 5; i++) {
-                smallX.sew();
-                largeX.sew();
+                this.stitches[1].sew();
+                this.stitches[2].sew();
             }
         }
     }

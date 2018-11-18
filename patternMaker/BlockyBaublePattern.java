@@ -10,36 +10,33 @@ public class BlockyBaublePattern extends Pattern {
     @Override
     public void stitchCombo() {
         this.needleJam = (Math.random() < 0.10d);
-        BlockStitch block = new BlockStitch();
-        ShortLineStitch shortLine = new ShortLineStitch();
-        CircleStitch circle = new CircleStitch();
         if (needleJam) {
             for (int i = 0; i < 1; i++) {
-                block.sew();
+                this.stitches[5].sew();
                 for (int j = 0; j < 2; j++) {
-                    shortLine.sew();
+                    this.stitches[0].sew();
                 }
-                circle.sew();
+                this.stitches[3].sew();
                 for (int j = 0; j < 2; j++) {
-                    shortLine.sew();
+                    this.stitches[0].sew();
                 }
                 for (int j = 0; j < 1; j++) {
-                    block.sew();
+                    this.stitches[5].sew();
                     for (int k = 0; k < 2; k++) {
-                        shortLine.sew();
+                        this.stitches[0].sew();
                     }
-                    circle.sew();
+                    this.stitches[3].sew();
                 }
             }
         } else {
                 for (int i = 0; i < 3; i++) {
-                    block.sew();
+                    this.stitches[5].sew();
                     for (int j = 0; j < 2; j++) {
-                        shortLine.sew();
+                        this.stitches[0].sew();
                     }
-                    circle.sew();
+                    this.stitches[3].sew();
                     for (int j = 0; j < 2; j++) {
-                        shortLine.sew();
+                        this.stitches[0].sew();
                     }
                 }
             }
