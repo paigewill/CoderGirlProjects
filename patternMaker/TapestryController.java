@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class TapestryController {
     private Pattern currentPattern = null;
-    public void menu(){
+    public void menu() {
         Scanner keyboard = new Scanner(System.in);
 
         Pattern[] allPatterns = new Pattern[5];
@@ -44,7 +44,6 @@ public class TapestryController {
     }
 
     public void printTapestry(Pattern pattern) {
-        Scanner keyboard = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 8; j++) {
                 pattern.stitchCombo();
